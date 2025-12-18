@@ -15,4 +15,6 @@ p.subscribe(channel)
 while True:
     message = randint(15, 45)
     r.publish(channel, message)
+    print(f"Temperatura enviada: {message}")
     sleep(2)
+
